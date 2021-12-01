@@ -1,5 +1,5 @@
 <?php
- 
+ echo "beginning";
   $name = $_POST['name'];
   $visitor_email = $_POST['email'];
   $message = $_POST['message'];
@@ -14,10 +14,11 @@
 
   $headers = "From: $email_from \r\n";
 
-  $headers .= "Reply-To: $visitor_email \r\n";
+  $headers = "Reply-To: $visitor_email \r\n";
 
   mail($to,$email_subject,$email_body,$headers);
- 
+ echo "mailed to";
+ echo $to;
   function IsInjected($str)
   {
     $injections = array('(\n+)',
