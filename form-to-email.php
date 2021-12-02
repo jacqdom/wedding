@@ -50,7 +50,7 @@ curl_setopt_array($curl, array(
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_POSTFIELDS =>"{\"recipients\":[{\"email\":\"rmota29619@gmail.com\"}],\"title\":\"Title\",\"html\":\"Body" . $email_body . "\"}",
+    CURLOPT_POSTFIELDS =>"{\"recipients\":[{\"email\":\"rmota29619@gmail.com\"}],\"title\":\"Title\",\"html\":\"Body\"}",
     CURLOPT_HTTPHEADER => array(
         "x-trustifi-key: " . $_ENV['TRUSTIFI_KEY'],
         "x-trustifi-secret: " . $_ENV['TRUSTIFI_SECRET'],
