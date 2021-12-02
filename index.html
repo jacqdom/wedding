@@ -1,14 +1,91 @@
 <html>
+<head>
+    <style>
+        img {
+            border: 2px solid black;   
+            width: 100%
+        }
+
+        #container {
+            position: relative;
+            width: 500px;
+            margin:auto;
+            top: 50px;
+        }
+
+        #example {
+            position: absolute;
+            top: 10px;
+            left: 10px; 
+                
+            padding: 5px;
+           
+        }
+
+        #rsvp{
+            position: absolute;
+            top: 134px;
+            left: 57px; 
+       
+        }
+
+        #dinner{
+            position: absolute;
+            top: 230px;
+            left: 62px; 
+       
+        }
+        #name{
+            position: relative;
+            top: 80px;
+            left: 100px; 
+       
+        }
+    </style>
+</head>
+
 <body>
-<form method="post" name="myemailform" action="form-to-email.php">
-
-Enter Name:	<input type="text" name="name">
-
-Enter Email Address:	<input type="text" name="email">
-
-Enter Message:	<textarea name="message"></textarea>
-
-<input type="submit" value="Send Form">
-</form>
+    <div id="container">
+        <img src="rsvp.jpg" alt="rsvp_img">
+        <div id="example">
+            <form method="post" name="myemailform" action="form-to-email.php">
+                <div id="name">
+                    Name:	<input type="text" name="name" >
+                </div>
+                <div id="rsvp">
+                    <input type="radio" id="accept" name="rsvp" value="accept">
+                    <label for="accept"></label>
+                    <input type="radio" id="decline" name="rsvp" value="decline" style="position:absolute; left:179px;">
+                    <label for="decline"></label><br>
+                </div>
+                <br>
+                <div id="dinner">
+                    <input type="radio" id="chicken" name="dinner" value="chicken">
+                    <label for="chicken"></label>
+                    <input type="radio" id="trout" name="dinner" value="trout" style="position:absolute; left:107px;">
+                    <label for="trout"></label>
+                    <input type="radio" id="vegan" name="dinner" value="vegan" style="position:absolute; left:188px;">
+                    <label for="vegan"></label>
+                    <br>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="RSVP" style="position:absolute; left:50px;">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
