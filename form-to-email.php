@@ -64,7 +64,7 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    echo "Sent! Thankyou!;
+    echo $response;
 }
 //end of heroku handler
 
